@@ -76,6 +76,9 @@ is stripped and replaced with new hashes.
 
  - `strip.py`: Remove section header table and drop hash segment from the ELF image.
 
+ - `create_elf.py`: Create ELF image from a binary file. It is expected that entry point is located
+   right at the beginning of the binary. Next, this new ELF file can be signed with `qtestsign.elf`
+
 ## License
 [qtestsign] is licensed under the [GNU General Public License, version 2]. It is mostly based on the specification
 from Qualcomm's whitepaper _"Secure Boot and Image Authentication"_ (both
